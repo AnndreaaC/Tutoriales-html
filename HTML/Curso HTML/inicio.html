@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PRIMERA PÁGINA WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        label {
+            flex-basis: 40%;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"], 
+        input[type="number"], 
+        input[type="date"], 
+        input[type="email"], 
+        select {
+            flex-basis: 55%;
+            padding: 5px;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 55%;
+            padding-left: 10px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid blueviolet;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>mi primera pagina web</h1>
+    <p>Bienvenido a mi primera pagina web utilizando el lenguaje de marcado html</p>
+    <hr>
+    <br>
+    <p>Nombres Mariuxi Andrea Calle Dumaguala</p>
+    <br>
+    <p>Edad: 24 años</p>
+    <br>
+    <p>Asignatura: Diseño de interfaz</p>
+    <h2>Elementos de html</h2>
+    <a href="http://tecazuay.edu.ec">ACCESO A LA PÁGINA INSTITUCIONAL</a>
+    <br>
+    <img src="logo1.png" alt="Logo">
+    <br>
+    <h3>Elementos de las listas</h3>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+    </ol>
+    <h4>Elementos de la tabla</h4>
+    <table>
+        <tr>
+            <th>ESTUDIANTE</th>
+            <th>DISEÑO DE INTERFAZ</th>
+            <th>BASE DE DATOS</th>
+            <th>PROGRAMACION VISUAL</th>
+            <th>INGLES</th>
+            <th>CALCULO DIFERENCIAL</th>
+            <th>FUNDAMENTOS DE ADMINISTRACIÓN</th>
+        </tr>
+        <tr>
+            <td>ANDREA CALLE</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <h3>Elementos de formulario</h3>
+    <form action="" method="">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad"> 
+        </div>
+        <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" id="celular" name="celular">
+        </div>
+        <div class="form-group">
+            <label for="estado_civil">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil">
+                <option value="1">Casado</option>
+                <option value="2">Soltero</option>
+                <option value="3">Divorciado</option>
+                <option value="4">Viudo</option>
+                <option value="5">Union Libre</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="discapacidad">¿Tiene alguna discapacidad?</label>
+            <div class="radio-group">
+                <input type="radio" name="discapacidad" id="discapacidad_si" value="1">SI
+                <input type="radio" name="discapacidad" id="discapacidad_no" value="0">NO
+            </div>
+        </div>
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+<footer>
+</footer>
+</html>
